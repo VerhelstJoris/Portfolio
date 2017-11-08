@@ -34,5 +34,5 @@ ul li a {
 	transition: all 0.1s linear;
 }
 ul li:hover a, .home:hover {
-	color: #fff;
+	color: #000000;
 }
