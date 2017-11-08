@@ -1,6 +1,18 @@
 
 
-//Navigation
+//Header and Navigation
+
+header {
+	width: 100%;
+	height: 60px;
+	padding: 0px;
+	z-index: 5;
+	border-bottom: 1px solid rgba(250,250,250,0.05);
+	position: fixed;
+	background-color: rgba(250,250,250,0.1);
+}
+
+
 nav {
 	float: right;
 }
