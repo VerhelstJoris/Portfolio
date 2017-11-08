@@ -1,0 +1,26 @@
+
+
+//Navigation
+nav {
+	float: right;
+}
+
+nav ul li {
+	float: left;
+	display: inline-block;
+	font-size: 15px;
+	text-align: left;
+	margin-right: 25px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+ul li a {
+	color: #E1E1E1;
+	text-decoration: none;
+	transition: all 0.1s linear;
+}
+ul li:hover a, .home:hover {
+	color: #fff;
+}
