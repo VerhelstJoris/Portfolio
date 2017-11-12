@@ -264,8 +264,6 @@ section article{
 	background-color: #575757;
 }
 
-
-
 .dot {
  	cursor:pointer;
   	height: 15px;
@@ -297,3 +295,10 @@ section article{
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+/* Sketchfab links */
+.sketchfab-embed-wrapper{
+	text-align: center;
+	margin: 50px 0 0 0;
+}
+
