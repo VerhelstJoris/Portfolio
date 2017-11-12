@@ -280,3 +280,20 @@ section article{
 .active, .dot:hover {
   	background-color: #575757;
 }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.3s;
+  animation-name: fade;
+  animation-duration: 0.3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
