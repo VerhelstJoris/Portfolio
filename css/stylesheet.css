@@ -41,12 +41,14 @@ header {
 
 nav {
 	float: right;
+	text-decoration: none;
 }
 
 nav ul li {
+	list-style-type: none;
+	text-decoration: none;
 	font-family: Helvetica,Arial,serif;
 	float: left;
-	display: inline-block;
 	font-size: 15px;
 	text-align: left;
 	margin-right: 0px;
@@ -55,8 +57,6 @@ nav ul li {
 	letter-spacing: 0px;
 	font-weight: normal;
 	text-transform: uppercase;
-	text-decoration: none;
-
 }
 
 ul li a {
@@ -68,6 +68,25 @@ ul li a {
 ul li:hover a, .home:hover {
 	color: #575757;
 }
+
+
+/* Footer*/
+footer{
+	width:80%;
+	transform:translate(10%,0%);
+
+	
+	font-family: Helvetica,Arial,serif;
+	display: inline-block;
+	font-size: 15px;
+	text-align: left;
+	margin-top: -50px;
+	letter-spacing: 0px;
+	color: #A9A9A9;
+	text-decoration: none;
+	font-weight: normal;
+}
+
 
 /* BODY*/
 
