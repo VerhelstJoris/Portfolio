@@ -31,6 +31,7 @@ header {
 	display: inline-block;
 	font-size: 15px;
 	text-align: left;
+	float:left;
 	margin-top: -50px;
 	letter-spacing: 0px;
 	color: #A9A9A9;
@@ -233,8 +234,7 @@ section article{
 
 .prev, .next {
   	cursor: pointer;
-  	position: absolute;
-  	top: 62%;
+  	position: relative;
   	width: auto;
   	margin-top: -22px;
   	padding: 16px;
@@ -247,8 +247,17 @@ section article{
 }
 
 .next {
-  	right:0px;
-  	border-radius: 3px 0 0 3px;
+	
+	float:right;
+	border-radius: 3px 0 0 3px;
+	transform: translate(0%, -450%);
+}
+
+.prev{
+	
+	float:left;
+	transform: translate(0%, -450%);
+
 }
 
 .prev:hover, .next:hover {
