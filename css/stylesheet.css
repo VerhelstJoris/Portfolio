@@ -5,7 +5,7 @@
 
 header {
 	width: 80%;
-	height:80px;
+	height:auto;
 	z-index: 5;
 	border-bottom: 2px solid black;
 	border-color: #000000;
@@ -103,8 +103,7 @@ section {
 	padding: 5% 0px 5% 0px;
 }
 
-section h3
-{
+section h3{
 	position:relative;
 	font-family: Helvetica,Arial,serif;
 	font-weight: 800;
@@ -113,9 +112,21 @@ section h3
 	color: #000000;
 	font-size: 25px;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 	text-decoration: none !important;
 	
+}
+
+section article{
+	position: relative;
+	font-family: Helvetica,Arial,serif;
+	display: inline-block;
+	font-size: 15px;
+	text-align:justify;
+	letter-spacing: 0px;
+	color: #A9A9A9;
+	text-decoration: none;
+	font-weight: normal;
 }
 
 .container {
@@ -204,4 +215,59 @@ section h3
 
 }
 
+/* Slideshow */
+.slideshow_container{
+	text-align: center;
+	margin: 75px 0px 0px 0px;
+	background-color: #000000;
+}
 
+
+.slide img{
+	width:615px;
+	height:500px;
+	object-fit: cover;
+	align-self: center;
+}
+
+
+.prev, .next {
+  	cursor: pointer;
+  	position: absolute;
+  	top: 62%;
+  	width: auto;
+  	margin-top: -22px;
+  	padding: 16px;
+  	color: white;
+  	font-weight: bold;
+  	font-size: 18px;
+  	transition: 0.6s ease;
+  	border-radius: 0 3px 3px 0;
+	background-color: #A9A9A9;
+}
+
+.next {
+  	right:0px;
+  	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: #575757;
+}
+
+
+
+.dot {
+ 	cursor:pointer;
+  	height: 15px;
+  	width: 15px;
+  	margin: 0 2px;
+  	background-color: #A9A9A9;
+  	border-radius: 50%;
+  	display: inline-block;
+  	transition: background-color 0.5s ease;
+}
+
+.active, .dot:hover {
+  	background-color: #575757;
+}

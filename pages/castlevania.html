@@ -1,10 +1,107 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Castlevania</title>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<title>Castlevania</title>
+	    <link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
 
-<body>
-</body>
+	</head>
+
+	<body>
+		
+		<header>
+	    	<a href="../index.html"><h4 class="home">Verhelst Joris</h4></a>
+			<nav>
+		  		<ul>
+					<li><a href="../index.html">Projects</a></li>
+      				<li><a href="./resume.html">Resume</a></li>
+					<li><a href="./contact.html">Contact</a></li>
+		  		</ul>
+			</nav>
+			
+			<br>
+			<a href="../index.html"><h3 class="home_sub">Game Programmer</h3></a>
+
+		</header>
+		
+		<section>
+			<h3>Castlevania Remake</h3>
+			
+			<article>
+				As part of an exam in 2016, I remade the first level of the classic 1987 release, Castlevania from scratch. My goal in this project was to learn about some of the features of C++ I had not yet used before such as Inheritance and Polymorphism. Additionally, I learned about XML in implementing a system to populate the level with enemies and pickups by reading a file. 
+				<br>
+				<br>
+				This project was made in C++ using a custom framework provided by school.
+			</article>
+			
+			<div class="slideshow_container">
+				<div class="slide fade">
+					<img src="../images/castlevania/castlevania_2_cropped.jpg" alt="Castlevania_2">
+				</div>
+				
+				<div class="slide fade">
+					<img src="../images/castlevania/castlevania_3_cropped.jpg" alt="Castlevania_3">
+				</div>
+				
+				<div class="slide fade">
+					<img src="../images/castlevania/castlevania_4_cropped.jpg" alt="Castlevania_4">
+				</div>
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+			<br>
+			
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+			
+			<script>
+				
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+				
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("slide fade");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+			}
+				
+			</script>
+
+			
+		</section>
+		
+		<footer>
+			<br>
+			<br>
+			<br>
+			<br>
+	   			© Portfolio of Joris Verhelst | 2017 | All rights reserved
+			<br>
+			<br>
+		</footer>
+		
+	</body>
 </html>
