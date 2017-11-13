@@ -25,8 +25,120 @@
 		</header>
 		
 		<section>
+			<br>
+			<br>
+			<br>
 			<h3>DM_KARL</h3>
 			
+			<article>
+				for a level editing course, we had to create a map for the 2-3 players for the competitive shooter Unreal Tournament, made by Epic Games. We started by making a level that had to flow well for movement and had to encourage good gameplay. Later on, we had to decorate this level using modular props and decorations using trim materials to make it possible for 1 student to finish an entire level. 
+				<br>
+				<br>
+				this was also my first experience with the unreal material editor to make animated materials and tileable materials.
+			</article>
+			
+			<!--			Slideshow
+-->			
+			<div class="slideshow_container">
+				<div class="slideFull fade">
+					<img src="../images/karl/render_5.png" alt="Karl_5">
+				</div>
+				
+				<div class="slideFull fade">
+					<img src="../images/karl/render_2.png" alt="Karl_2">
+				</div>
+				
+				<div class="slideFull fade">
+					<img src="../images/karl/render_3.png" alt="Karl_3">
+				</div>
+				
+				<div class="slideFull fade">
+					<img src="../images/karl/render_4.png" alt="Karl_4">
+
+				</div>
+				
+				<div class="slideFull fade">
+					<img src="../images/karl/render_1.png" alt="Karl_1">
+
+				</div>
+				
+				<div class="slideFull fade">
+					<img src="../images/karl/render_6.png" alt="Karl_6">
+
+				</div>
+				
+				<div class="slideFull fade">
+					<img src="../images/karl/render_7.png" alt="Karl_7">
+
+				</div>
+				
+				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			
+			<br>
+			
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			  <span class="dot" onclick="currentSlide(4)"></span> 
+			  <span class="dot" onclick="currentSlide(5)"></span> 
+			  <span class="dot" onclick="currentSlide(6)"></span> 
+			  <span class="dot" onclick="currentSlide(7)"></span> 
+
+			</div>
+			
+			<script>
+				
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+				
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("slideFull fade");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+			}
+				
+			</script>
+			
+<!--		Vimeo embed
+-->			
+			<div class="vimeo-embed-wrapper">
+				<iframe src="https://player.vimeo.com/video/200769412" width="800" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+			</div>
+			
+		</section>
+			
+		<section>
+			<h3>WIP & Breakdown</h3>
+		
+			<article>
+			Here is a breakdown of all the meshes that were used in creating DM_KARL. Most props are modular pieces that allow for quick decoration of large parts of the level with a few unique decorations mixed in for variety's sake.
+			</article>
+		
+			<img src="../images/karl/breakdown.png" alt="breakdown">
+		
 		
 		
 		</section>
