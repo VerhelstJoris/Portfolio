@@ -222,14 +222,27 @@ section article{
 
 /* Slideshow */
 .slideshow_container{
+	width:100%;
+	display: block;
 	text-align: center;
 	margin: 75px 0px 0px 0px;
 	background-color: #000000;
 }
 
+
 .slide img{
+	vertical-align: bottom;
 	width:615px;
 	height:500px;
+	object-fit: cover;
+	align-self: center;
+}
+
+
+.slideFull img{
+	vertical-align: bottom;
+	width:100%;
+	height:auto;
 	object-fit: cover;
 	align-self: center;
 }
@@ -238,7 +251,6 @@ section article{
   	cursor: pointer;
   	position: relative;
   	width: auto;
-  	margin-top: -22px;
   	padding: 16px;
   	color: white;
   	font-weight: bold;
@@ -246,21 +258,20 @@ section article{
   	transition: 0.6s ease;
   	border-radius: 0 3px 3px 0;
 	background-color: #A9A9A9;
+	top:50%;
+	
+	transform: translate(0%, -150%);
+	float:left;
+	
 }
+
 
 .next {
 	
 	float:right;
 	border-radius: 3px 0 0 3px;
-	transform: translate(0%, -450%);
 }
 
-.prev{
-	
-	float:left;
-	transform: translate(0%, -450%);
-
-}
 
 .prev:hover, .next:hover {
 	background-color: #575757;
@@ -289,12 +300,12 @@ section article{
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .7} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .7} 
   to {opacity: 1}
 }
 
@@ -315,7 +326,7 @@ section article{
 	width:24.5%;
 	height: 24.5%;
 	margin: 50px 0 0 0;
-	float:inherit;
+
 }
 
 .images_list h1{

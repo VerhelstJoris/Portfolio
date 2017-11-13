@@ -28,7 +28,7 @@
 			<h3>Mauser c96</h3>
 			
 			<article>
-				a PBR, low-poly version of the iconic world war I era pistol that was made from 1896 to 1937. First a high and low-poly version were created using 3ds max. all texturing and baking was done using Substance Painter 2. The final renders were made in Unreal Engine 4.
+				a PBR, low-poly version of the iconic world war I era pistol that was made from 1896 to 1937. First a high and low-poly version were created using 3ds max. all texturing and baking was done using Substance Painter 2. The final renders were made in Unreal Engine 4 and Iray.
 			</article>
 		
 			
@@ -53,10 +53,81 @@
 				<h1>Metalness</h1>
 			</div>
 			
+<!--			Slideshow
+-->			
+			<div class="slideshow_container">
+				<div class="slideFull fade">
+					<img src="../images/mauser/beautyshot_1.png" alt="Mauser_UE_1">
+				</div>
+				
+				<div class="slideFull fade">
+					<img src="../images/mauser/beautyshot_2.png" alt="Mauser_UE_2">
+				</div>
+				
+				<div class="slideFull fade">
+					<img src="../images/mauser/iray1.png" alt="Mauser_Iray_1">
+				</div>
+				
+				<div class="slideFull fade">
+					<img src="../images/mauser/iray2.png" alt="Mauser_Iray_2">
+				</div>
+				
+				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			
+			
+			
+			<br>
+			
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			  <span class="dot" onclick="currentSlide(4)"></span> 
+
+			</div>
+			
+			
+			<script>
+				
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+				
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("slideFull fade");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+			}
+				
+			</script>
+			
+<!--			Sketchfab embed
+-->			
 			<div class="sketchfab-embed-wrapper">
 				<iframe width="800" height="500" src="https://sketchfab.com/models/b9f77ce0f0ae451f87d439e4b8d83240/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
 			</div>
 		
+			
 		</section>
 		
 		<footer>
