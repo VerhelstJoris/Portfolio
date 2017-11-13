@@ -236,6 +236,7 @@ section article{
 	height:500px;
 	object-fit: cover;
 	align-self: center;
+	position: relative;
 }
 
 
@@ -245,6 +246,7 @@ section article{
 	height:auto;
 	object-fit: cover;
 	align-self: center;
+	position:relative;
 }
 
 .prev, .next {
