@@ -252,6 +252,7 @@ section img{
 	object-fit: cover;
 	align-self: center;
 	position: relative;
+	margin: 0 0 0 0;
 }
 
 
@@ -262,6 +263,7 @@ section img{
 	object-fit: cover;
 	align-self: center;
 	position:relative;
+	margin: 0 0 0 0;
 }
 
 .prev, .next {
