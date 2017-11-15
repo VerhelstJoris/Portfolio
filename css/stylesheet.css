@@ -90,8 +90,6 @@ footer{
 
 /* BODY*/
 
-
-
 section {
 	width: 80%;
 	height:auto;
@@ -99,7 +97,7 @@ section {
 	border-color: #000000;
 	position:relative;
 	transform:translate(10%,0%);
-	padding: 75px 0px 75px 0px;
+	padding: 50px 0px 75px 0px;
 }
 
 section h3{
@@ -113,7 +111,24 @@ section h3{
 	text-transform: uppercase;
 	letter-spacing: 0px;
 	text-decoration: none !important;
-	
+}
+
+section h4{
+	position:relative;
+	font-family: Helvetica,Arial,serif;
+	margin-top: 25px;
+	text-align:left;
+	color: #000000;
+	font-size: 20px;
+	text-transform: none;
+	letter-spacing: 0px;
+	text-decoration: none !important;
+}
+
+section img{
+	width:100%;
+	height:auto;
+	margin: 25px 0 25px 0;
 }
 
 section article{
@@ -135,10 +150,77 @@ section article img{
 	margin:0 0 0 20;
 }
 
-section img{
-	width:100%;
+.skills_list{
+	position: relative;
+	display: inline;
+	margin:0;
+
+}
+
+.skills_list img
+{
+	width: 120px;
 	height: auto;
-	margin: 25px 0 25px 0;
+	margin: 0px 20px 40px 20px;
+	object-fit: cover;
+
+}
+
+.skills_list h1{
+	font-family: Helvetica,Arial,serif;
+	text-decoration: none;
+	font-size: 17px;
+	letter-spacing: 0px;
+	font-weight: bold;
+	color: black;
+	margin: 60px 0 0 0;
+	
+	bottom:15;
+	left:50%;
+	position:absolute;
+	text-align: center;
+	float:none;
+	white-space: nowrap;
+	transform: translate(-50%, 0%);
+	
+}
+
+.skills_list .tooltiptext{
+	font-family: Helvetica,Arial,serif;
+	visibility: hidden;
+    width: auto;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 10px 5px 10px;
+
+	
+    /* Position the tooltip */
+    z-index: 1;
+	left:50%;
+	position:absolute;
+	text-align: center;
+	white-space: nowrap;
+	float:none;
+	transform: translate(-50%, -69%);
+
+}
+
+.skills_list .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+
+
+.skills_list:hover .tooltiptext{
+	visibility: visible;
 }
 
 .container {
@@ -152,7 +234,7 @@ section img{
 }
 
 .container div{
-	margin: 5% auto auto auto;
+	margin: 50px auto auto auto;
 }
 
 
@@ -168,8 +250,6 @@ section img{
 	color:rgba(255,255,255,0.00);
 	margin: 0 0 0 0;
 	
-
-
 }
 
 
@@ -178,7 +258,7 @@ section img{
 	height:350px;
 	object-fit: cover;
 	transition: all 0.2s linear;
-	margin: 0 0 0 0;
+	margin: 50 0 0 0;
 	
 }
 
@@ -186,7 +266,7 @@ section img{
 	width:380px;
 	height:380px;
 	object-fit: cover;
-	margin: -15px 0 0 -15px;
+	margin: 35px 0 0 -15px;
 	-webkit-filter: grayscale(100%); 
 	-webkit-filter: brightness(30%); 
 
