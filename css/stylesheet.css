@@ -150,17 +150,6 @@ section article img{
 	margin:0 0 0 20;
 }
 
-section article pdf_preview img{
-	float:left;
-	margin: 0 15px 0 0;
-	width:15%;
-	height:auto;
-	border: 2px solid;
-	border-color: #000000;
-	border-radius: 1%;
-	
-}
-
 .skills_list{
 	position: relative;
 	display: inline;
@@ -431,21 +420,6 @@ section article pdf_preview img{
 	margin: 50px 0 0 0;
 }
 
-.images_voxel{
-	
-	position: relative;
-	display: inline;
-	margin:0 0 0 0;
-}
-
-.images_voxel img{
-	display: inline;
-	width:33%;
-	height: auto;
-	margin: 15px 0 0 0;
-
-}
-
 
 .images_list{
 	
@@ -455,7 +429,6 @@ section article pdf_preview img{
 }
 
 .images_list img{
-	display: inline;
 	width:24.5%;
 	height: 24.5%;
 	margin: 0 0 0 0;
