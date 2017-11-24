@@ -117,11 +117,12 @@ section h4{
 	position:relative;
 	font-family: Helvetica,Arial,serif;
 	margin-top: 0px;
-	text-align:left;
+	float:left;
 	color: #000000;
 	font-size: 20px;
 	text-transform: uppercase;
 	letter-spacing: 0px;
+	display:block;
 	text-decoration: none !important;
 }
 
@@ -197,9 +198,10 @@ section article pdf_preview img{
 
 .skills_list{
 	position: relative;
-	display: list-item;
 	margin:0;
-
+	list-style: none;
+	display: block;
+	float:left;
 }
 
 .skills_list img
@@ -243,11 +245,10 @@ section article pdf_preview img{
     /* Position the tooltip */
     z-index: 1;
 	left:50%;
+	top:0%;
 	position:absolute;
-	text-align: center;
 	white-space: nowrap;
-	float:none;
-	transform: translate(-50%, -69%);
+	transform: translate(-50%, -75%);
 
 }
 
@@ -275,6 +276,16 @@ section article pdf_preview img{
 	align-items:flex-start;
 	flex-direction: row;
 	flex-wrap:wrap;
+
+}
+
+.skills{
+	
+	display:flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	
+	margin: 5% 0 0 5% 0;
 
 }
 
