@@ -92,11 +92,12 @@ footer{
 
 section {
 	width: 80%;
+	transform:translate(10%,0%);
+
 	height:auto;
 	border-bottom: 2px solid black;
 	border-color: #000000;
 	position:relative;
-	transform:translate(10%,0%);
 	padding: 50px 0px 75px 0px;
 }
 
@@ -157,12 +158,18 @@ section article{
 }
 
 section article img{
-	float:right;
-	width:25%;
+	float:left;
+	width:30%;
 	height: auto;
-	margin:0 0 0 20;
+	display: block;
+	margin: 20px 0 20px 0;
 }
 
+section article .right_pic img
+{
+	float:right;
+	
+}
 
 team_member{
 	width:50%;
@@ -479,9 +486,9 @@ section article pdf_preview img{
 /* Youtube links */
 .youtube-embed-wrapper{
 	text-align: center;
-	width:100%;
-	height:56.25%;
-	margin: 0px 0 0 0;
+	position: relative;
+	height:600px;
+	padding-top: 25px;
 }
 
 .images_voxel{
@@ -538,3 +545,38 @@ section article pdf_preview img{
 .b {
 	font-weight: bolder;
 }
+
+
+input[type=text], select {
+    width: 45%;
+	height:auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+	box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.text_big input[type=text], select{
+	height: 50%;
+	float:right;
+}
+
+.text_big textarea{
+	float:right;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+

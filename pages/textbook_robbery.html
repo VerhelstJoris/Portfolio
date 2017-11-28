@@ -45,7 +45,7 @@
 			<h4>Trailer</h4>
 			
 			<div class="youtube-embed-wrapper">
-				<iframe width="100%" src="https://www.youtube.com/embed/nTwjQMk0KL4?rel=0" frameborder="0" allowfullscreen></iframe>
+				<iframe width="100%" height="100%" position="absolute" src="https://www.youtube.com/embed/nTwjQMk0KL4?rel=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 			
 		</section>
@@ -82,7 +82,33 @@
 				
 			</article>
 
-
+		</section>
+		
+		<section>
+			<article>
+				<div class="skills">
+					<h4>Camera</h4>
+				</div>
+				
+				Designing and implementing the camera was one of my main tasks as well as being one of my first times being confronted with such a mathematically focussed problem. I ended up deciding on something similar to what the more recent games have implemented: the camera will stay centered between the two players until they are a certain distance from each other. However, if they are further apart, the camera will split based on the players relative location to each other.<br>
+				<br>
+				The biggest challenge during all of this was making sure the players appeared in the same place on the screen during the transitions from one camera to two and vice-versa.
+				
+				
+				<div class="skills">
+					<h4>Sound</h4>
+				</div>
+				
+				For the sound I first had to work out a system that would work for when the game is played in splitscreen because unity does not suppost multiple audio listeners very well. I ended up with a simple system that manages all sounds very easily, this also allowed me to slim down on the amount of audiosources in all of our levels. The one limitation that I had to work with, is that all sounds effects could not be three dimensional, this was fine for most things but I still ended up implementing a system that 'fakes' 3D sounds in a very basic manner.  <br>
+				
+				<img src="../images/textbook_robbery/audiomanager.png" alt="Audiomanager">
+				
+				<div class="skills">
+					<h4>UI</h4>
+				</div>
+			</article>
+		
+		
 		</section>
 		
 		<footer>
