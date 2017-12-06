@@ -187,6 +187,11 @@ section article a:hover{
 	color: #575757;
 }
 
+section bannerimage img{
+	width:100%;
+	height: 5%;
+}
+
 
 team_member{
 	width:50%;
