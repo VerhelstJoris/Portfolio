@@ -42,7 +42,6 @@
 		</section>
 		
 		<section>
-			<h4>Trailer<br><br></h4>
 			
 			<div class="youtube-embed-wrapper">
 				<iframe src="https://www.youtube.com/embed/nTwjQMk0KL4?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -68,18 +67,22 @@
 					<b>Joris Verhelst</b>: Camera, UI, Sound, General programming<br>
 				</team_member>
 				<team_member>
-					<a href="http://yentoffcuypers.azurewebsites.net/">Yentoff Cuypers</a>: Tool dev, Systems dev<br>
+					<a href="http://yentoffcuypers.azurewebsites.net/" target="_blank">Yentoff Cuypers</a>: Tool dev, Systems dev<br>
 				</team_member>
 				<team_member>
-					<a href="http://antong.one/index.html">Anton Guljajev</a>: Animations, Combat, Shaders and Lighting<br>
+					<a href="http://antong.one/index.html" target="_blank">Anton Guljajev</a>: Animations, Combat, Shaders and Lighting<br>
 				</team_member>
 				<team_member>
-					<a href="https://www.artstation.com/sherka">Pablo Sanchez</a>: Static meshes, Main characters<br>
+					<a href="https://www.artstation.com/sherka" target="_blank">Pablo Sanchez</a>: Static meshes, Main characters<br>
 				</team_member>
 				<team_member>
-					<a href="https://sketchfab.com/patrick.jahr">Patrick Jahr</a>: Static meshes, Cars, Enemy characters<br>
+					<a href="https://sketchfab.com/patrick.jahr" target="_blank">Patrick Jahr</a>: Static meshes, Cars, Enemy characters<br>
 				</team_member>
 				
+				<br>
+				<br>
+				for more information about the development of the game, check out our
+				<a href="https://daeteam16.wordpress.com/" target="_blank">blog</a>
 			</article>
 
 		</section>
@@ -90,24 +93,55 @@
 					<h4>Camera</h4>
 				</div>
 				
-				Designing and implementing the camera was one of my main tasks as well as being one of my first times being confronted with such a mathematically focussed problem. I ended up deciding on something similar to what the more recent games have implemented: the camera will stay centered between the two players until they are a certain distance from each other. However, if they are further apart, the camera will split based on the players relative location to each other.<br>
+				<img src="../images/textbook_robbery/camera.gif" alt="Camera">
+				
+				Designing and implementing the camera was one of my main tasks as well as being one of my first times being confronted with such a mathematically focused problem. I ended up deciding on something similar to what the more recent lego games by Traveller's Tales have implemented: the camera will stay centered between the two players until they are a certain distance from each other. However, if they are further apart, the camera will split based on the players relative location to each other. This split will also rotate based on how the players movement and their positions on the screen will be adjusted while taking the angle of the split into account.<br>
 				<br>
 				The biggest challenge during all of this was making sure the players appeared in the same place on the screen during the transitions from one camera to two and vice-versa.
 				
-				
+			</article>
+			<article>
+
 				<div class="skills">
 					<h4>Sound</h4>
 				</div>
 				
-				For the sound I first had to work out a system that would work for when the game is played in splitscreen because unity does not suppost multiple audio listeners very well. I ended up with a simple system that manages all sounds very easily, this also allowed me to slim down on the amount of audiosources in all of our levels. The one limitation that I had to work with, is that all sounds effects could not be three dimensional, this was fine for most things but I still ended up implementing a system that 'fakes' 3D sounds in a very basic manner.  <br>
-				
 				<img src="../images/textbook_robbery/audiomanager.png" alt="Audiomanager">
+			
+				For the sound I first had to work out a system that would work for when the game is played in splitscreen because unity does not support multiple audio listeners in a single scene very well. I ended up with a simple system that manages all sounds very easily, this also allowed me to slim down on the amount of audiosources in all of our levels. The one limitation that I had to work with, is that all sounds effects could not be three dimensional, this was fine for most things but I still ended up implementing a system that 'fakes' 3D sounds in a very basic manner. <br> <br>
+				
+				The implemented audiomanager works in that every time you want a sound to be played in the game, it is called and spawns a temporary audiosource that will play the 2D sound as requested with a set volume, pitch and randomness on both of these values, to make sure it doesn't sound the same every time. Some other sounds that are basically played all the time, such as car engines, had their volume changing based on the player that was closest to their player. 
+				
+			</article>
+			<article>
 				
 				<div class="skills">
 					<h4>UI</h4>
 				</div>
+				
+				<img src="../images/textbook_robbery/HUD.png" alt="HUD">
+				
+				A lot of the challenge while implementing the UI was to display a lot of information without completely cluttering the screen with numbers and info. The HUD also had to display the info for both players at the same time.
+				
+				
 			</article>
 		
+		</section>
+		
+		<section>
+			<article>
+				
+				<div class="skills">
+					<h4>ScreenShots</h4>
+				</div>
+				
+			</article>
+
+			<img src="../images/textbook_robbery/Still1.jpg" alt="Still1">
+			<img src="../images/textbook_robbery/Still2.jpg" alt="Still2">
+			<img src="../images/textbook_robbery/Still3.jpg" alt="Still3">
+
+				
 		
 		</section>
 		
