@@ -4,6 +4,30 @@
     <title>Portfolio - Verhelst Joris</title>
     <link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
     
+	  
+	<script>
+		function validateForm()
+		{
+			if (document.forms["myForm"]["fname"].value==null || document.forms["myForm"]["fname"].value=="") {
+				alert("First name must be filled out");
+				return false;
+			}
+			if (document.forms["myForm"]["lname"].value==null || document.forms["myForm"]["lname"].value=="") {
+				alert("Last name must be filled out");
+				return false;
+			}
+			if (document.forms["myForm"]["email"].value==null || document.forms["myForm"]["email"].value=="") {
+				alert("Email must be filled out");
+				return false;
+			}
+			if (document.forms["myForm"]["question"].value==null || document.forms["myForm"]["question"].value=="") {
+				alert("Question must be filled out");
+				return false;
+			}
+		return true;
+		}
+	</script>
+	  
   </head>
   
   <body>
@@ -32,7 +56,7 @@
 			<h3>Contact</h3>
 		  
 		  	<article>
-		  		You can send a mail to joris.verhelst@student.howest.be or fill out the form underneath in case you want to contact me.
+		  		You can shoot me a mail at joris.verhelst@student.howest.be or fill out the form below in case you want to contact me.
 		  	</article>
 
 		  <form name="myForm">
@@ -43,7 +67,7 @@
 				<div class = "form_item_question">Question<br><textarea type="question" name="question"></textarea>
 				
 				<!-- drop the files in this input --> 
-				<div class = "form_file_upload" style= "padding-top: 20px"> Upload file <br><input type="file" multiple method="POST"></div>
+				<div class = "form_file_upload" style= "padding-top: 20px" > Upload file <br><input type="file" multiple method="POST"></div>
 					
 				</div>
 							
