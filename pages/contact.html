@@ -31,29 +31,25 @@
 			<br>
 			<h3>Contact</h3>
 		  
+		  	<article>
+		  		You can send a mail to joris.verhelst@student.howest.be or fill out the form underneath in case you want to contact me.
+		  	</article>
 
-		  <form>
-			First Name<br>
-		  	<input type="text" id="fname" name="firstname" value="">
-  			<br>
-  			Last name:<br>
-		  	<input type="text" id="lname" name="lastname" value="">
-			<br>
-  			Email:<br>
-		  	<input type="text" id="email" name="email" value="">
-		  	<br>
-  			Message:<br>
-			<div class="text_big">
-				<textarea rows="50" cols="50"></textarea>
-			</div>
-			  
-			  
-			<input type="submit" value="Submit">
-
+		  <form name="myForm">
+				
+				<div class = "form_item"> First name<br><input type="text" name="fname"></div>
+				<div class = "form_item"> Last name <br><input type="text" name="lname"></div>
+				<div class = "form_item"> E-mail <br><input type="email" name="email"></div>
+				<div class = "form_item_question">Question<br><textarea type="question" name="question"></textarea>
+				
+				<!-- drop the files in this input --> 
+				<div class = "form_file_upload" style= "padding-top: 20px"> Upload file <br><input type="file" multiple method="POST"></div>
+					
+				</div>
+							
+				<input type="submit" value="Submit">
+			</form>
 		  
-		  </form>
-		  
-	  	  
 	  
 	  
 	  </section>

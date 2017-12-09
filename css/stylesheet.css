@@ -585,36 +585,120 @@ section article pdf_preview img:hover{
 }
 
 
-input[type=text], select {
-    width: 45%;
-	height:auto;
-    padding: 12px 20px;
-    margin: 8px 0;
-	box-sizing: border-box;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.text_big input[type=text], select{
-	height: 50%;
-	float:right;
-}
-
-.text_big textarea{
-	float:right;
+/*Contact*/
+form {
+	color: #575757;
+	margin-top: 25px;
 }
 
 input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+	width: 30%;
+	min-width: 100px;
+	margin: 20px 35% 0;
+	font-family: Helvetica,Arial,serif;
+	text-align: center;
+	font-size: 25px;
+	text-transform: uppercase;
+	height: 55px;
+	color: #4F4F4F;
+	background-color: #fff;
+	border: 4px solid #4F4F4F;
+	padding: 0px 5px 0;
+	cursor: pointer;
+	transition: all 0.1s linear;
 }
 
+input[type=submit]:hover {
+	width: 40%;
+	min-width: 150px;
+	margin: 20px 30% 0;
+	box-shadow: 0px 0px 1px 0 #000;
+}
 
+.form_item, .form_item_question {
+	padding-bottom: 20px;
+	font-size: 25px;
+	font-family: Helvetica,Arial,serif;
+}
+
+.form_item {
+	width: 50%;
+}
+
+input[type=file] {
+	width: 100%;
+	height: 90px;
+	border-radius: 2px;
+	border: 3px solid #A9A9A9;
+}
+
+input[type=text], input[type=email]{
+	width: 100%;
+	border-radius: 2px;
+	border: 2px solid #A9A9A9;
+	height: 40px;
+	color: #575757;
+	padding: 12px 0px 12px 20px;
+	margin: 8px 0;
+	font-size: 16px;
+	transition: all 0.1s linear;
+	font-family: Helvetica,Arial,serif;
+}
+
+.form_item_question {
+	margin-top: -320px;
+	padding-left: 10px;
+	width: 43%;
+	float: right;
+}
+
+textarea {
+	width: 100%;
+	box-sizing: border-box;
+	resize: none;
+	border-radius: 2px;
+	border: 2px solid #A9A9A9;
+	height: 250px;
+	color: #4F4F4F;
+	padding: 20px 20px 0;
+	margin: 10px 0 0 0 ;
+	font-size: 16px;
+	transition: all 0.1s linear;
+	font-family: Helvetica,Arial,serif;
+}
+
+select[name=topic] {
+	width: 100%;
+	border-radius: 2px;
+	border: 2px solid #575757;
+	height: 50px;
+	color: #575757;
+	font-size: 16px;
+	font-family: Helvetica,Arial,serif;
+	padding: 12px 0px 12px 20px;
+	margin: 8px 0;
+	transition: all 0.1s linear;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=question]:focus {
+    border: 2px solid #555;
+}
+
+.contact_block {
+	display: inline-block;
+	float: right;
+	margin-top: -500px;
+	margin-right: 100px;
+	background-color: #F5F5F5;
+	box-shadow: 0px 0px 1px 0 #000;
+	width: 24%;
+	height: 400px;
+}
+
+.contact_info {
+	text-align: center;
+	height: 100px;
+	font-size: 16px;
+	padding-top: 10px;
+}
 
