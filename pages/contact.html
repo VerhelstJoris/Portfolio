@@ -8,19 +8,19 @@
 	<script>
 		function validateForm()
 		{
-			if (document.forms["myForm"]["fname"].value==null || document.forms["myForm"]["fname"].value=="") {
+			if (document.forms["contactForm"]["fname"].value==null || document.forms["contactForm"]["fname"].value=="") {
 				alert("First name must be filled out");
 				return false;
 			}
-			if (document.forms["myForm"]["lname"].value==null || document.forms["myForm"]["lname"].value=="") {
+			if (document.forms["contactForm"]["lname"].value==null || document.forms["contactForm"]["lname"].value=="") {
 				alert("Last name must be filled out");
 				return false;
 			}
-			if (document.forms["myForm"]["email"].value==null || document.forms["myForm"]["email"].value=="") {
+			if (document.forms["contactForm"]["email"].value==null || document.forms["contactForm"]["email"].value=="") {
 				alert("Email must be filled out");
 				return false;
 			}
-			if (document.forms["myForm"]["question"].value==null || document.forms["myForm"]["question"].value=="") {
+			if (document.forms["contactForm"]["question"].value==null || document.forms["contactForm"]["question"].value=="") {
 				alert("Question must be filled out");
 				return false;
 			}
@@ -59,7 +59,7 @@
 		  		You can shoot me a mail at joris.verhelst@student.howest.be or fill out the form below in case you want to contact me.
 		  	</article>
 
-		  <form name="myForm">
+		  <form name="contactForm">
 				
 				<div class = "form_item"> First name<br><input type="text" name="fname"></div>
 				<div class = "form_item"> Last name <br><input type="text" name="lname"></div>
